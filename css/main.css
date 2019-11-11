@@ -1,0 +1,97 @@
+@import "custom-colors.css";
+@import "greeting.css";
+@import "links.css";
+@import "settings.css";
+@import "todo.css";
+@import "weather.css";
+@import "quotes.css";
+
+
+/* Box-sizing Reset */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* General Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white-color);
+    margin: 0; /* remove default margin */
+    background-color: var(--black-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/* Blocks */
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+}
+
+#logo {
+    width: 200px;
+    margin: auto;
+}
+
+
+footer {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+/* Elements */
+
+.logo__img {
+    border-radius: 100px;
+    margin: 30px auto;
+    display: block;
+}
