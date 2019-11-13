@@ -15,6 +15,10 @@
     {
         "language":"English3",
         "Greet" : "Hello, Governor"
+    },
+    {
+        "language": "Japanese",
+        "Greet" : "Konnichiwa"
     }
 
 ]
