@@ -26,4 +26,5 @@ for the Momentum first draft.
 [Interactive draft](https://xd.adobe.com/view/790359b1-a35f-4e23-71b4-b6e6bdc37df9-0f32/)
 
 ### Responsive layout wireframe
-![Responsive](./assets/responsive.pdf)
+![Responsive version1](./assets/wireframe_responsive_v1.PNG)
+![Responsive version1](./assets/wireframe_responsive_v2.PNG)
