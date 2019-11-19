@@ -1,97 +1,152 @@
 @import "custom-colors.css";
+@import "variables.css";
 @import "greeting.css";
 @import "links.css";
 @import "settings.css";
 @import "todo.css";
-@import "weather.css";
+@import "pomodoro.css";
 @import "quotes.css";
 
+/****Table of Content****
+- Box-sizing Reset
+- General Styles
+- Blocks
+- Modifiers
+- Responsive
+*************************/
 
 /* Box-sizing Reset */
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
 
 html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
 }
 
-
-  *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0; /* remove default margin*/
+	padding: 0;
 }
 
 /* General Styles */
-
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--white-color);
-    margin: 0; /* remove default margin */
-    background-color: var(--black-color);
+	font-family: "Roboto", sans-serif;
+	color: var(--white-color);
+	background-color: var(--black-color);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 a {
-    text-decoration: none;
-    color: var(--white-color);
-    cursor: pointer;
+	text-decoration: none;
+	color: var(--white-color);
+	cursor: pointer;
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 /* Blocks */
-
-.container {
-    position: relative;
-    height: 100vh;
-}
-
-#main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-header {
-    width: 100%;
-    height: 120px;
+#bottomNav,
+#topNav {
+	display: none;
 }
 
 #logo {
-    width: 200px;
-    margin: auto;
+	flex: 1;
+	margin: 1em 0.5em;
+	opacity: 0.3;
+	font-size: var(--fz-logo);
 }
 
-
-footer {
-    width: 100%;
-    height: 40px;
-    text-align: center;
+#main {
+	flex: 8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-footer p {
-    margin-top: 10px;
+#nav {
+	flex: 1;
+	display: flex;
+	justify-content: space-evenly;
 }
 
+.icon {
+	cursor: pointer;
+	width: 5em;
+	font-size: var(--fz-icon);
+}
 
-/* Elements */
+/* Modifiers */
+.icon--smallScreen {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
-.logo__img {
-    border-radius: 100px;
-    margin: 30px auto;
-    display: block;
+.icon--smallScreen:hover {
+	border-top: 2px solid white;
+}
+
+/* Responsive*/
+@media only screen and (min-width: 600px) {
+	:root {
+		/* typography */
+		--fz-logo: 0.8rem;
+		--fz-time: 7rem;
+		--fz-greeting_text: 2.5rem;
+		--fz-greeting_span: 2rem;
+		--fz-greeting_input: 1.7rem;
+		--fz-quote: 1.2rem;
+		--fz-icon: 1rem;
+	}
+
+	#logo,
+	#nav {
+		display: none;
+	}
+
+	#topNav,
+	#bottomNav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1em;
+	}
+
+	.icon--bigScreen img {
+		display: none;
+	}
+
+	#quotes {
+		align-items: flex-end;
+	}
 }
