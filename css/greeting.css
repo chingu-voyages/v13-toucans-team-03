@@ -1,36 +1,39 @@
+@import "custom-color.css";
+
+
 /* Blocks */
 #greeting {
-    flex:9;
+    margin: auto;
+    padding-top: 80px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .time {
-    font-size: var(--fz-time);
+    font-size: 11rem;
     display: inline;
-    line-height: 1em;
 }
 
 #greeting span {
-    font-size: var(--fz-greeting_span);
+    font-size: 2rem;
+    margin-left: 15px;
     display: none;
+
 }
 
 /* Elements */
 .greeting__text {
-    font-size: var(--fz-greeting_text);
     width: 100%;
-    line-height: 1em;
+    font-size: 3rem;
+    margin: 0.1em 0;
 }
 
-#greeting__input {  
-    width:100%;
-    height: 1.5em;
-    line-height: 1em;
-    font-size: var(--fz-greeting_input);
+
+#greeting__input {
+    width: 600px;
+    height: 50px;
+    margin: 15px;
+    padding: 0 10px;
+    font-size: 1.7rem;
     border-bottom: solid 1px var(--white-color);
 }
 
@@ -38,7 +41,9 @@
     outline: none;
 }
 
+
 /* Modifiers */
+
 .input_custom {
     background: none;
     border: none;
