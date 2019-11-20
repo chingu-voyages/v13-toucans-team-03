@@ -19,7 +19,12 @@ export function displayTime() {
 	}
 
 	document.getElementsByClassName("time")[0].innerHTML = currentHours + ":" + currentMinutes + meridiem;
-	return 'working'
+
+	let time_obj ={
+		"hour": currentHours,
+		"meridiem":meridiem
+	}
+	return time_obj;
 }
 
 displayTime();
