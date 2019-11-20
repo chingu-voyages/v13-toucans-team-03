@@ -1,7 +1,7 @@
 /* Blocks */
 
-#todo {
+#weather {
     position: absolute;
-    bottom: 35px;
+    top: 35px;
     right: 35px;
 }
