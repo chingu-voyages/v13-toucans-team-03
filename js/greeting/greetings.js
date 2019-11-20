@@ -23,13 +23,13 @@ display hello message
 
 if(localStorage.getItem('userName')){
     if(time_of_day === 'AM'){
-        greet.innerHTML = "Good Morning, " +localStorage.getItem('userName');
+        greet.innerHTML = "Good Morning, " + localStorage.getItem('userName');
     }
     else if(time_of_day ==='PM' && hour < 6){
-        greet.innerHTML = "Good Afternoon, " +localStorage.getItem('userName');
+        greet.innerHTML = "Good Afternoon, " + localStorage.getItem('userName');
     }
     else{
-        greet.innerHTML = "Good Night, " +localStorage.getItem('userName');
+        greet.innerHTML = "Good Night, " + localStorage.getItem('userName');
 
     }
 }
