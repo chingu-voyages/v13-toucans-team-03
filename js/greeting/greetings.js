@@ -1,6 +1,5 @@
 import {displayTime} from './../time.js';
 
-console.log(displayTime().hour);
 
 //variables
 let greet = document.getElementsByClassName("greeting__text")[0];
