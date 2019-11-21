@@ -1,4 +1,4 @@
-Please make these boxes are checked before submitting your feature pull request:
+Please make sure these boxes are checked before submitting your feature pull request:
 ### Locally
 - [ ] Pull the latest changes and merge to local branch by `git pull origin development`.
 - [ ] Create a feature branch by `git branch feat/my-awesome-feature`.
@@ -11,5 +11,5 @@ Please make these boxes are checked before submitting your feature pull request:
 ### Making a PR.
 - [ ] Write a descriptive feature name title for the PR.
 - [ ] List the changes made in this PR.
-- [ ] Assign PR to the feature-issue by `Issue #<issue number>`
+- [ ] Assign the PR to the feature-issue by `Issue #<issue number>`
 - [ ] Assign a teamate or teamates to review the PR.
