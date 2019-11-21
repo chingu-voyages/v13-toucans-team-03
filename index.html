@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+		<title>Momentum-like App</title>
+	</head>
+	<body>
+		<header><div id="logo">MoTo</div></header>
 
-    <title>Momentum-like App</title>
-</head>
-<body>
-    <div class="container">
-        <section id="main">
-            <header>
-                <div id="logo">
-                    <img src="https://via.placeholder.com/80x80" alt="logo" class="logo__img">
-                </div>
-            </header>
-            <div id="greeting">
-                <div class="time"></div>
-                <p class="greeting__text"></p>
+		<div id="topNav">
+			<div id="team">
+				<a href="#" class="icon icon--bigScreen">
+					<img class="team__icon" src="img/team" alt="team icon" />
+					Team
+				</a>
+			</div>
+			<div id="pomodoro">
+				<a href="#" class="icon icon--bigScreen">
+					<img class="pomodoro__icon" src="img/pomodoro" alt="pomodoro icon" />
+					Pomodoro
+				</a>
+			</div>
+		</div>
 
-                <input class="input_custom" id="greeting__input" type="text" placeholder="type your name and press enter">
+		<main id="main">
+			<div id="greeting">
+				<div class="time"></div>
+				<p class="greeting__text"></p>
+				<input class="input_custom" id="greeting__input" type="text" />
+			</div>
+			<div id="quotes">
+				<p class="quotes__text">"Long-term consistency trumps short-term intensity"</p>
+			</div>
+		</main>
 
-            </div>
-            <div id="quotes">
-                <p class="quotes__text">"Long-term consistency trumps short-term intensity"</p>
-            </div>
-            <footer>
-                <p>copyright 2019</p>
-            </footer>
-        </section>
-        <div id="links">
-            <a href="#">Links</a>
-        </div>
-        <div id="weather">
-            <a href="#">
-                <img class="weather__icon" src="img/weather" alt="weather">
-                <p class="weather__city">Los Angeles</p>
-            </a>
-        </div>
-        <div id="settings">
-            <a href="#"><img src="img/setting.png" alt="settings">Settings</a>
-        </div>
-        <div id="todo">
-            <a href="#">Todo</a>
-        </div>
-    </div>
+		<div id="nav">
+			<div id="team">
+				<a href="#" class="icon icon--smallScreen">
+					<img class="team__icon" src="img/team" alt="team icon" />
+					Team
+				</a>
+			</div>
+			<div id="settings">
+				<a href="#" class="icon icon--smallScreen">
+					<img class="settings__icon" src="img/settings" alt="settings icon" />
+					Settings
+				</a>
+			</div>
+			<div id="todo">
+				<a href="#" class="icon icon--smallScreen">
+					<img class="todo__icon" src="img/todo" alt="todo icon" />
+					ToDo
+				</a>
+			</div>
+			<div id="pomodoro">
+				<a href="#" class="icon icon--smallScreen">
+					<img class="pomodoro__icon" src="img/pomodoro" alt="pomodoro icon" />
+					Pomodoro
+				</a>
+			</div>
+		</div>
 
-    <!-- JavaScript -->
-    <script type="module" src="js/greeting/greetings.js"></script>
-    <script src="js/time.js"></script>
-</body>
+		<div id="bottomNav">
+			<div id="settings">
+				<a href="#" class="icon icon--bigScreen">
+					<img class="settings__icon" src="img/settings" alt="settings icon" />
+					Settings
+				</a>
+			</div>
+			<div id="todo">
+				<a href="#" class="icon icon--bigScreen">
+					<img class="todo__icon" src="img/todo" alt="todo icon" />
+					ToDo
+				</a>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+        <script src="js/greeting/greetings.js"></script>
+        <script src="js/time.js"></script>
+	</body>
 </html>
