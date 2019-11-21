@@ -4,7 +4,7 @@ Please make sure these boxes are checked before submitting your feature pull req
 - [ ] Create a feature branch by `git branch feat/my-awesome-feature`.
 - [ ] Move to the feature branch by `git checkout feat/my-awesome-feature`
 - [ ] Stage all changes by `git ad .` or `git add <file name>` to add specific changes to a file(s).
-- [ ] Commit locally an exceptionally well written commit message
+- [ ] Commit locally and write an exceptionally well written commit message
   
   by `git commit -m 'short description of changes'`.
 - [ ] Push feature branch changes by `git push origin development`.
