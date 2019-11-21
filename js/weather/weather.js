@@ -22,6 +22,16 @@ import { config } from './apikey.js';
 
 //separate information
 
+//get geolocation
+function getLocation(){
+    if(navigator.geolocation){
+        console.log(navigator.geolocation)
+        //navigator.geolocation.getCurrentPosition(showPosition)
+    }else{
+        console.log("Geolocation is not supported")
+    }
+}
+
 //api fetch
 
 //api url
