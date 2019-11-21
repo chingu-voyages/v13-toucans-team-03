@@ -7,7 +7,7 @@ Please make sure these boxes are checked before submitting your feature pull req
 - [ ] Commit locally and write an exceptionally well written commit message
   
   by `git commit -m 'short description of changes'`.
-- [ ] Push feature branch changes by `git push origin development`.
+- [ ] Push feature branch changes by `git push origin feat/my-awesome-feature`.
 ### Making a PR.
 - [ ] Write a descriptive feature name title for the PR.
 - [ ] List the changes made in this PR.
