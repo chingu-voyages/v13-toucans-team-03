@@ -1,8 +1,33 @@
 import { config } from './apikey.js';
 
+
+function getLocation(){
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition);
+  }else{
+    console.log('Geolocation not available');
+  }
+}
+
+
+async function showPosition(position){
+  console.log(position.coords);
+
+  let {latitude, longitude} = position.coords;
+  const weather_url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&units=imperial&cnt=7&appid=${config.apiKey}`;
+  console.log(weather_url)
+  const response = await fetch(weather_url);
+  console.log(response)
+  const json = await response.json();
+  console.log(json)
+
+}
+
+getLocation()
+
 // url
 //const weather_url = `api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=xml&units=metric&cnt=7&appid=${config.apiKey}`;
-
+/*
 
 function geoFindMe() {
 
@@ -19,10 +44,6 @@ function geoFindMe() {
      console.log(weather_url);
      console.log(latitude);
 
-     return weather_url;
-
-     
-
     }
   
     function error() {
@@ -33,9 +54,11 @@ function geoFindMe() {
       console.log('Geolocation is not supported by your browser');
     } else {
       navigator.geolocation.getCurrentPosition(success, error);
+      console.log(success)
     }
   
   }
   
-console.log(geoFindMe())
+*/
+
 
