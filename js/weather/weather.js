@@ -19,8 +19,9 @@ async function showPosition(position){
   const response = await fetch(weather_url);
   console.log(response)
   const myjson = await response.json();
+  weatherData(myjson)
   //console.log(myjson.list[0])
-
+ /*
   for(let index in myjson.list){
     console.log(myjson.list[index])
     let x = myjson.list[index];
@@ -31,22 +32,27 @@ async function showPosition(position){
     console.log(x.weather[0].main)
   
   }
-
+*/
 
 }
 // ! convert date time
 // ! https://stackoverflow.com/questions/37979198/convert-datetime-from-server-to-string-javascript
 
-/*
+
 function weatherData(jsonData){
-  for(let data in myjson.list){
-    myjson.list[data];
+  
+  for(let index in jsonData.list){
+    console.log(jsonData.list[index])
+    let x = jsonData.list[index];
+    console.log(x.dt)
+    var y =new Date(parseInt(x.dt)*1000);
+    console.log(y)
+    console.log(x.temp.max)
+    console.log(x.weather[0].main)
+  
   }
-   data.temp.max
-   data.dt
-   weather.main
 }
-*/
+
 
 getLocation();
 
