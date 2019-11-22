@@ -18,47 +18,28 @@ async function showPosition(position){
   console.log(weather_url)
   const response = await fetch(weather_url);
   console.log(response)
-  const json = await response.json();
-  console.log(json)
+  const myjson = await response.json();
+  //console.log(myjson.list[0])
+
+  for(let data in myjson.list){
+    console.log(myjson.list[data])
+  }
+
 
 }
 
+/*
+function weatherData(jsonData){
+  for(let data in myjson.list){
+    myjson.list[data];
+  }
+   data.temp.max
+   data.dt
+   weather.main
+}
+*/
+
 getLocation()
 
-// url
-//const weather_url = `api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=xml&units=metric&cnt=7&appid=${config.apiKey}`;
-/*
-
-function geoFindMe() {
-
-    let weather_url;
-  
-    //successful callback
-    function success(position) {
-      const latitude  = position.coords.latitude;
-      const longitude = position.coords.longitude;
-
-      weather_url = `api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=xml&units=metric&cnt=7&appid=${config.apiKey}`;
-
-      
-     console.log(weather_url);
-     console.log(latitude);
-
-    }
-  
-    function error() {
-      console.log('Unable to retrieve your location');
-    }
-  
-    if (!navigator.geolocation) {
-      console.log('Geolocation is not supported by your browser');
-    } else {
-      navigator.geolocation.getCurrentPosition(success, error);
-      console.log(success)
-    }
-  
-  }
-  
-*/
 
 
