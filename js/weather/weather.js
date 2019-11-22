@@ -39,7 +39,7 @@ function weatherData(jsonData){
 }
 */
 
-getLocation()
+getLocation();
 
 
 
