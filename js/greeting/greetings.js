@@ -1,5 +1,6 @@
 import {displayTime} from './../time.js';
 
+console.log(displayTime().hour);
 
 //variables
 let greet = document.getElementsByClassName("greeting__text")[0];
@@ -9,6 +10,9 @@ let greet_input = document.getElementById("greeting__input");
 
 let hour = displayTime().hour;
 let time_of_day = displayTime().meridiem;
+
+console.log(time_of_day)
+
 
 //methods
 
