@@ -1,6 +1,6 @@
 //Get openweathermap api key from file api keys
 
-import { config } from './key.js';
+import { config } from './apikey.js';
 
 
 function getLocation(){
