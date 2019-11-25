@@ -1,4 +1,4 @@
-function displayTime() {
+export function displayTime() {
 	var currentTime = new Date();
 	var currentHours = currentTime.getHours();
 	var currentMinutes = currentTime.getMinutes();
@@ -20,6 +20,11 @@ function displayTime() {
 
 	document.getElementsByClassName("time")[0].innerHTML = currentHours + ":" + currentMinutes + meridiem;
 
+	let time_obj ={
+		"hour": currentHours,
+		"meridiem":meridiem
+	}
+	return time_obj;
 }
 
 displayTime();
