@@ -22,11 +22,14 @@ async function showPosition(position){
   const weather_url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&units=imperial&cnt=7&appid=${config.apiKey}`;
   console.log(weather_url);
 
-
+  //response
   const response = await fetch(weather_url);
   console.log(response)
+
+  //body of the response
   const myjson = await response.json();
   console.log(myjson)
+
   weatherData(myjson);
 
 }
