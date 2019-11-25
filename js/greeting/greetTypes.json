@@ -1,0 +1,24 @@
+[
+    {
+        "language": "Spanish",
+        "Greet"    : "Hola"
+
+    },
+    {
+        "language": "English",
+        "Greet"   : "Hello"
+    },
+    {
+        "language": "English2",
+        "Greet" : "Howdy"
+    },
+    {
+        "language":"English3",
+        "Greet" : "Hello, Governor"
+    },
+    {
+        "language": "Japanese",
+        "Greet" : "Konnichiwa"
+    }
+
+]
