@@ -1,0 +1,21 @@
+:root {
+    /*color*/
+    --gold-color: #ecbe83;
+    --light-purple-color: #7b6c8e;
+    --white-color: rgb(243, 242, 242);
+    --black-color: #2A2A2A;
+	/* typography */
+	--fz-logo: 1rem;
+	--fz-time: 5rem;
+	--fz-greeting_text: 1.5rem;
+	--fz-greeting_span: 1rem;
+	--fz-greeting_input: 0.9rem;
+	--fz-quote: 0.9rem;
+	--fz-icon: 0.8rem;
+	--fz-teamTitle:1.5rem;
+	--fz-teamHeader:1rem;
+	--fz-teamMute:0.85rem;
+	--fz-teamLink:0.9rem;
+	/*spacing*/
+	--pd-team:0.5em 0;
+}

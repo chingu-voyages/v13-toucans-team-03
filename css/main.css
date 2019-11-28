@@ -1,97 +1,169 @@
-@import "custom-colors.css";
+@import "variables.css";
 @import "greeting.css";
-@import "links.css";
-@import "settings.css";
-@import "todo.css";
+@import "team.css";
+@import "pomodoro.css";
 @import "weather.css";
+@import "todo.css";
 @import "quotes.css";
 
+/****Table of Content****
+- Box-sizing Reset
+- General Styles
+- Blocks
+- Modifiers
+- Responsive
+*************************/
 
 /* Box-sizing Reset */
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
 
 html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
 }
 
-
-  *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0; /* remove default margin*/
+	padding: 0;
 }
 
 /* General Styles */
-
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--white-color);
-    margin: 0; /* remove default margin */
-    background-color: var(--black-color);
+	font-family: "Roboto", sans-serif;
+	color: var(--white-color);
+	background-color: var(--black-color);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 a {
-    text-decoration: none;
-    color: var(--white-color);
-    cursor: pointer;
+	text-decoration: none;
+	color: var(--white-color);
+	cursor: pointer;
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 /* Blocks */
-
-.container {
-    position: relative;
-    height: 100vh;
+#bottomNav,
+#topNav {
+	display: none;
 }
 
 #main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+	flex: 9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-header {
-    width: 100%;
-    height: 120px;
+#nav {
+	flex: 1;
+	display: flex;
+	justify-content: space-evenly;
+	z-index: 99;
+	background: black;
 }
 
-#logo {
-    width: 200px;
-    margin: auto;
+.team,
+.pomodoro,
+.weather,
+.todo {
+	cursor: pointer;
+	font-size: var(--fz-icon);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-
-footer {
-    width: 100%;
-    height: 40px;
-    text-align: center;
-}
-
-footer p {
-    margin-top: 10px;
-}
-
 
 /* Elements */
+.team__icon,
+.pomodoro__icon,
+.weather__icon,
+.todo__icon {
+	max-width: 4rem;
+	display: block;
+	height: auto;
+}
 
-.logo__img {
-    border-radius: 100px;
-    margin: 30px auto;
-    display: block;
+.team__text,
+.pomodoro__text,
+.weather__text,
+.todo__text {
+	margin: 0.5em;
+}
+
+/* Modifiers */
+.icon--smallScreen {
+	flex-direction: column;
+}
+
+.icon--smallScreen:hover {
+	border-top: 2px solid white;
+}
+
+.icon--bigScreen {
+	flex-direction: row;
+}
+
+/* Responsive*/
+@media only screen and (min-width: 600px) {
+	:root {
+		/* typography */
+		--fz-logo: 0.8rem;
+		--fz-time: 7rem;
+		--fz-greeting_text: 2.5rem;
+		--fz-greeting_span: 2rem;
+		--fz-greeting_input: 1.7rem;
+		--fz-quote: 1.2rem;
+		--fz-icon: 1rem;
+		--fz-teamTitle: 3rem;
+		--fz-teamHeader: 2rem;
+		--fz-teamMute: 1rem;
+		--fz-teamLink: 1.2rem;
+		/*spacing*/
+		--pd-team: 1em 0;
+	}
+
+	#logo,
+	#nav {
+		display: none;
+	}
+
+	#topNav,
+	#bottomNav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1em;
+	}
+
+	#quotes {
+		align-items: flex-end;
+	}
 }
