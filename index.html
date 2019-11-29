@@ -10,20 +10,74 @@
 		<title>Momentum-like App</title>
 	</head>
 	<body>
-		<header><div id="logo">MoTo</div></header>
+		<div id="teamInfo" class="teamInfo--hide">
+			<div class="container">
+				<div class="teamInfo__title">
+					MoTo
+					<span class="mute">
+						a toucans flavour Momentum clone.
+					</span>
+				</div>
+
+				<div class="teamInfo__team">
+					<span class="mute">built by</span>
+					<p class="header">Toucans-Team-03</p>
+					<div class="teamInfo__members">
+						<div class="teamInfo__member">
+							<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+							<p>
+								<a class="team__link" href="#">Ming</a>
+							</p>
+						</div>
+						<div class="teamInfo__member">
+							<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+							<p>
+								<a class="team__link" href="#">Ming</a>
+							</p>
+						</div>
+						<div class="teamInfo__member">
+							<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+							<p>
+								<a class="team__link" href="#">Ming</a>
+							</p>
+						</div>
+						<div class="teamInfo__member">
+							<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+							<p>
+								<a class="team__link" href="#">Ming</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="teamInfo__voyage">
+					<span class="mute">from</span>
+					<p class="header">Chingu Voyage 13</p>
+					<a class="team__link" href="#">
+						Learn more about our journey!
+					</a>
+				</div>
+
+				<div class="teamInfo__stack">
+					<span class="mute">with</span>
+					<p class="header">HTML, CSS, JavaScript</p>
+					<a class="team__link" href="https://github.com/chingu-voyages/v13-toucans-team-03">
+						Learn more about our code!
+					</a>
+				</div>
+			</div>
+			<!--container-->
+		</div>
+		<!--teamInfo-->
 
 		<div id="topNav">
-			<div id="team">
-				<a href="#" class="icon icon--bigScreen">
-					<img class="team__icon" src="img/team" alt="team icon" />
-					Team
-				</a>
+			<div class="team icon--bigScreen">
+				<img class="team__icon" src="./assets/logo.png" alt="logo" />
+				<p class="team__text">MoTo</p>
 			</div>
-			<div id="pomodoro">
-				<a href="#" class="icon icon--bigScreen">
-					<img class="pomodoro__icon" src="img/pomodoro" alt="pomodoro icon" />
-					Pomodoro
-				</a>
+			<div class="pomodoro icon--bigScreen">
+				<img class="pomodoro__icon" src="./assets/logo.png" alt="pomodoro icon" />
+				<p class="pomodoro__text">Pomodoro</p>
 			</div>
 		</div>
 
@@ -31,7 +85,7 @@
 			<div id="greeting">
 				<div class="time"></div>
 				<p class="greeting__text"></p>
-				<input class="input_custom" id="greeting__input" type="text" placeholder="type in your name, then press enter"/>
+				<input class="input_custom" id="greeting__input" type="text" placeholder="type in your name, then press enter" />
 			</div>
 			<div id="quotes">
 				<p class="quotes__text"></p>
@@ -39,51 +93,40 @@
 		</main>
 
 		<div id="nav">
-			<div id="team">
-				<a href="#" class="icon icon--smallScreen">
-					<img class="team__icon" src="img/team" alt="team icon" />
-					Team
-				</a>
+			<div class="team icon--smallScreen">
+				<img class="team__icon" src="./assets/logo.png" alt="logo" />
+				<p class="team__text">MoTo</p>
 			</div>
-			<div id="settings">
-				<a href="#" class="icon icon--smallScreen">
-					<img class="settings__icon" src="img/settings" alt="settings icon" />
-					Settings
-				</a>
+			<div class="pomodoro icon--smallScreen">
+				<img class="pomodoro__icon" src="./assets/logo.png" alt="pomodoro icon" />
+				<p class="pomodoro__text">Pomodoro</p>
 			</div>
-			<div id="todo">
-				<a href="#" class="icon icon--smallScreen">
-					<img class="todo__icon" src="img/todo" alt="todo icon" />
-					ToDo
-				</a>
+			<div class="weather icon--smallScreen">
+				<img class="weather__icon" src="./assets/logo.png" alt="weathericon" />
+				<p class="weather__text">Weather</p>
 			</div>
-			<div id="pomodoro">
-				<a href="#" class="icon icon--smallScreen">
-					<img class="pomodoro__icon" src="img/pomodoro" alt="pomodoro icon" />
-					Pomodoro
-				</a>
+			<div class="todo icon--smallScreen">
+				<img class="todo__icon" src="./assets/logo.png" alt="todoicon" />
+				<p class="todo__text">ToDo</p>
 			</div>
 		</div>
 
 		<div id="bottomNav">
-			<div id="settings">
-				<a href="#" class="icon icon--bigScreen">
-					<img class="settings__icon" src="img/settings" alt="settings icon" />
-					Settings
-				</a>
+			<div class="weather icon--bigScreen">
+				<img class="weather__icon" src="./assets/logo.png" alt="weathericon" />
+				<p class="weather__text">Weather</p>
 			</div>
-			<div id="todo">
-				<a href="#" class="icon icon--bigScreen">
-					<img class="todo__icon" src="img/todo" alt="todo icon" />
-					ToDo
-				</a>
+			<div class="todo icon--bigScreen">
+				<img class="todo__icon" src="./assets/logo.png" alt="todoicon" />
+				<p class="todo__text">ToDo</p>
 			</div>
 		</div>
 
 		<!-- JavaScript -->
 		<script type="module" src="js/weather-app/weather.js"></script>
-        <script type="module" src="js/greeting/greetings.js"></script>
-        <script type="module" src="js/time.js"></script>
-        <script src="js/quote.js"></script>
+    <script type="module" src="js/greeting/greetings.js"></script>
+    <script type="module" src="js/time.js"></script>
+    <script src="js/quote.js"></script>
+    <script type="module" src="js/modal.js"></script>
 	</body>
 </html>
