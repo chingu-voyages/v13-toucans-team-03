@@ -1,1 +1,38 @@
 /* Blocks */
+#pomodoro {
+    position: absolute;
+    z-index: 99;
+    width: 360px;
+    height: 400px;
+    visibility: visible;
+    right: 50px;
+    top: 50px;
+    transform: translate(0, 10px);
+    background-color: lightgray;
+    padding: 1.5rem;
+    color: var(--black-color);
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#pomodoro::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    right: calc(50% - 10px);
+    top: -8px;
+    border: solid 1px white;
+}
+
+#timer {
+    height:60%;
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+}
+
+#pdButtons {
+    height: 40%;
+}
