@@ -1,1 +1,146 @@
 /* Blocks */
+#pomodoro-modal {
+    position: absolute;
+    z-index: 99;
+    opacity: 0.8;
+    width: 360px;
+    height: 500px;
+    visibility: hidden;
+    right: 30px;
+    top: 60px;
+    transform: translate(0, 10px);
+    background-color: var(--black-color);
+    padding: 1.5rem;
+    color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#time {
+    font-size: 6rem;
+    margin-top: 25px; 
+}
+
+#pomodoro-modal::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 110px);
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--black-color) transparent;
+    top: -8px;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+#startTimer {
+    display: flex;
+    font-size: 4rem;
+    margin: auto;
+    border: 5px solid var(--gold-color);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#start {
+    z-index: 1;
+    position: relative;
+    color: var(--white-color);
+    margin-right: -12px;
+}
+
+#stop {
+    font-size: 2rem;
+    margin-right: 25px;
+}
+
+#reset {
+    margin-left: 25px;
+    font-size: 1.5rem;
+}
+
+#options {
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#work,
+#shortBreak,
+#longBreak {
+    text-align: center;
+    padding: 3px 5px;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#shortBreak,
+#longBreak {
+    margin-left: 15px;
+}
+
+#pdButtons {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#progress {
+    background: var(--gold-color);
+    height: 0px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+#play {
+    z-index: 99;
+    font-size: 3rem;
+    position: relative;
+    margin: auto;
+}
+
+/* Modifiers */
+.timer_btn {
+    box-shadow: 0 4px rgb(26, 26, 26);
+}
+
+.timer_btn:active {
+    box-shadow: none;
+    background-color: rgb(27, 27, 27);
+    transform: translateY(2px);
+}
+
+.work_btn {
+    background-color: #1d881d;
+}
+.work_btn:active {
+    background-color: #146114;
+}
+
+.shortBreak_btn {
+    background-color: #2d44a4;
+}
+
+.shortBreak_btn:active {
+    background-color: #22357e;
+}
+
+.longBreak_btn {
+    background-color: #251c6c;
+}
+
+.longBreak_btn:active {
+    background-color: #191349;
+}
