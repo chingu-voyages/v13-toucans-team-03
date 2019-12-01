@@ -56,10 +56,20 @@ function weatherData(jsonData){
     console.log(weatherDate)
 
     //maxium tempature for that day
+    let weatherTemp = weatherObj.temp.max;
     console.log(weatherObj.temp.max);
 
     //weather description from that day
+    let weatherDescription = weatherObj.weather[0].main;
     console.log(weatherObj.weather[0].main);
+
+    //weather icon
+    let weatherIcon = weatherObj.weather[0].icon;
+    console.log(weatherIcon,"weatherIcon");
+
+    let weatherIconUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+    console.log(weatherIconUrl,"weather icon link")
+
   
   }
 }
