@@ -19,7 +19,7 @@ async function showPosition(position){
   let {latitude, longitude} = position.coords;
 
   //create api url from browser coordinates
-  const weather_url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&units=imperial&cnt=7&appid=${config.apiKey}`;
+  const weather_url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&units=imperial&cnt=5&appid=${config.apiKey}`;
   console.log(weather_url);
 
   //response
