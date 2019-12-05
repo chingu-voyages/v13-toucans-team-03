@@ -1,20 +1,7 @@
 /*Blocks*/
 #teamInfo {
 	background: black;
-	position: absolute;
-	width: 100%;
-	height: 100%;
 	opacity: 0.95;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-  height: 100%;
-  width:80%;
-  margin:auto;
-	justify-content: center;
-	align-items: center;
 }
 
 /*Elements*/
@@ -62,15 +49,11 @@
 }
 
 /*Modifier*/
-.icon--clicked {
-	z-index: 99;
-}
-
-.header {
+.teamInfo__header {
 	font-size: var(--fz-teamHeader);
 }
 
-.mute {
+.teamInfo__mute {
 	font-size: var(--fz-teamMute);
 	color: grey;
 }
@@ -78,8 +61,4 @@
 .team__link {
 	color: orange;
 	font-size: var(--fz-teamLink);
-}
-
-.teamInfo--hide {
-	display: none;
 }
