@@ -1,11 +1,10 @@
-const icon_team = document.querySelectorAll(".team");
-const modal_teamInfo = document.getElementById("teamInfo");
+const icons = document.querySelectorAll(".icon");
+icons.forEach(icon=>{
+  icon.addEventListener("click",toggleModal);
+})
 
-icon_team.forEach(icon => {
-  icon.addEventListener("click",toggleTeamInfo);
-});
-
-function toggleTeamInfo(){
-  this.classList.toggle("icon--clicked")
-  modal_teamInfo.classList.toggle("teamInfo--hide");
+function toggleModal(){
+  this.classList.toggle("icon--clicked");
+  const modal = document.querySelector(`.modal[data-modal="${this.dataset.icon}"]`);
+  modal.style.visibility = (modal.style.visibility == "visible") ? "hidden" : "visible";
 }
