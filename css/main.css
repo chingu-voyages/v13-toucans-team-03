@@ -155,6 +155,14 @@ li {
 	#quotes {
 		align-items: flex-end;
 	}
+	/*weather modal*/
+	#weatherModal{
+		height:30em;
+		width:30em;
+		border-radius: 5px;
+		bottom:50px;
+		left:50px;
+	}
 
 	/*modal content*/
 	.container {
