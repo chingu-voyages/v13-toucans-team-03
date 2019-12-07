@@ -2,7 +2,6 @@
 #pomodoro-modal {
     position: absolute;
     z-index: 99;
-    opacity: 0.8;
     width: 360px;
     height: 500px;
     visibility: hidden;
@@ -112,6 +111,11 @@
 }
 
 /* Modifiers */
+
+.btn:active {
+    transform: translateY(2px);
+}
+
 .timer_btn {
     box-shadow: 0 4px rgb(26, 26, 26);
 }
@@ -119,7 +123,6 @@
 .timer_btn:active {
     box-shadow: none;
     background-color: rgb(27, 27, 27);
-    transform: translateY(2px);
 }
 
 .work_btn {
