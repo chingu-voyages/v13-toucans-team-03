@@ -1,4 +1,4 @@
-# What is MoTo (Momentum Toucans)
+# What is MoTo (Momentum Toucans) ![Moto logo](assets/logo-sm.png)
 [MoTo](https://chingu-voyages.github.io/v13-toucans-team-03/index.html) is a clone of [Momentum](https://momentumdash.com/), with three new bonus productivity features.
 
 ## Table of Contents
