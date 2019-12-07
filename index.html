@@ -94,7 +94,7 @@
 		<!-- End Pomodoro modal -->
 
 		<div id="topNav">
-			<div class="team icon--bigScreen">
+			<div class="icon icon--bigScreen" data-icon="team">
 				<img class="team__icon" src="./assets/logo.png" alt="logo" />
 				<p class="team__text">MoTo</p>
 			</div>
@@ -113,10 +113,79 @@
 			<div id="quotes">
 				<p class="quotes__text"></p>
 			</div>
+
+			<!-- team modal startclass="modal--hide" -->
+			<div id="teamInfo" class="modal"  data-modal="team">
+				<div class="container">
+					<div class="teamInfo__title">
+						MoTo
+						<span class="teamInfo__mute">
+							a toucans flavour Momentum clone.
+						</span>
+					</div>
+
+					<div class="teamInfo__team">
+						<span class="teamInfo__mute">built by</span>
+						<p class="teamInfo__header">Toucans-Team-03</p>
+						<div class="teamInfo__members">
+							<div class="teamInfo__member">
+								<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+								<p>
+									<a class="team__link" href="#">Ming</a>
+								</p>
+							</div>
+							<div class="teamInfo__member">
+								<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+								<p>
+									<a class="team__link" href="#">Ming</a>
+								</p>
+							</div>
+							<div class="teamInfo__member">
+								<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+								<p>
+									<a class="team__link" href="#">Ming</a>
+								</p>
+							</div>
+							<div class="teamInfo__member">
+								<img src="./assets/members/ming.jpg" alt="ming's profile picture" class="member__icon" />
+								<p>
+									<a class="team__link" href="#">Ming</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="teamInfo__voyage">
+						<span class="teamInfo__mute">from</span>
+						<p class="teamInfo__header">Chingu Voyage 13</p>
+						<a class="team__link" href="#">
+							Learn more about our journey!
+						</a>
+					</div>
+
+					<div class="teamInfo__stack">
+						<span class="teamInfo__mute">with</span>
+						<p class="teamInfo__header">HTML, CSS, JavaScript</p>
+						<a class="team__link" href="https://github.com/chingu-voyages/v13-toucans-team-03">
+							Learn more about our code!
+						</a>
+					</div>
+				</div>
+				<!--container-->
+			</div>
+			<!-- team modal end -->
+
+			<!-- weather example modal start -->
+			<div id="weatherModal"  class="modal" data-modal="weather">
+				<div class="container">
+					Place your code here
+				</div>
+			</div>
+			<!-- weather example modal end -->
 		</main>
 
 		<div id="nav">
-			<div class="team icon--smallScreen">
+			<div class="icon icon--smallScreen" data-icon="team">
 				<img class="team__icon" src="./assets/logo.png" alt="logo" />
 				<p class="team__text">MoTo</p>
 			</div>
@@ -124,7 +193,7 @@
 				<img class="pomodoro__icon" src="./assets/logo.png" alt="pomodoro icon" />
 				<p class="pomodoro__text">Pomodoro</p>
 			</div>
-			<div class="weather icon--smallScreen">
+			<div class="icon icon--smallScreen" data-icon="weather">
 				<img class="weather__icon" src="./assets/logo.png" alt="weathericon" />
 				<p class="weather__text">Weather</p>
 			</div>
@@ -135,7 +204,7 @@
 		</div>
 
 		<div id="bottomNav">
-			<div class="weather icon--bigScreen">
+			<div class="icon icon--bigScreen" data-icon="weather">
 				<img class="weather__icon" src="./assets/logo.png" alt="weathericon" />
 				<p class="weather__text">Weather</p>
 			</div>
