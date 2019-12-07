@@ -1,6 +1,8 @@
 @import "variables.css";
 @import "greeting.css";
+@import "modal.css";
 @import "team.css";
+@import "weatherModal.css";
 @import "pomodoro.css";
 @import "weather.css";
 @import "todo.css";
@@ -78,9 +80,8 @@ li {
 	background: black;
 }
 
-.team,
+.icon,
 .pomodoro,
-.weather,
 .todo {
 	cursor: pointer;
 	font-size: var(--fz-icon);
@@ -153,5 +154,19 @@ li {
 
 	#quotes {
 		align-items: flex-end;
+	}
+	/*weather modal*/
+	#weatherModal{
+		height:30em;
+		width:30em;
+		border-radius: 5px;
+		bottom:50px;
+		left:50px;
+	}
+
+	/*modal content*/
+	.container {
+		width:60%;
+		margin:auto;
 	}
 }
