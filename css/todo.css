@@ -1,1 +1,76 @@
 /* Blocks */
+#todoModal {
+	background: black;
+	opacity: 0.95;
+}
+
+
+.todo-container {
+    width: 30%;
+    background: rgba(36, 35, 35, 0.90);
+    color: white;
+    font-size: 1rem;
+    border-radius: 2%;
+    font-family: Arial;
+    padding: 0.1rem 1rem 1rem 0rem;
+}
+
+
+/* TODO LIST */
+ul {
+    list-style: none;
+}
+
+.list-group-item {
+    padding: .3rem ;
+    display: flex;
+    align-items: left; 
+}
+
+.list-group-item i.trash {
+    flex-grow: 0;
+    cursor: pointer;
+    color: #dc3545;
+    order: 4;
+}
+
+.list-group-item i.trash:hover {
+    color: #af1e2c;
+}
+
+.list-group-item .todo-text {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+/* toggle checkbox and strikethrough */
+.list-group-item.done .todo-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+/* INPUT FIELD */
+.form-control {
+    border: none;
+    font-size: 1.1rem;
+    color: white; 
+    background-color: transparent;
+
+}
+
+/* align inout field to list */
+.input-group {
+    justify-content: left;
+    padding-left: 45px;
+}
+
+/* remove input border */
+.form-control:focus {
+    outline:none;
+}
+
+/* hide add button */
+.todo-btn {
+    display: none;
+}

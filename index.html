@@ -122,6 +122,35 @@
 				</div>
 			</div>
 			<!-- weather example modal end -->
+
+			<!-- TODO  modal start -->
+			<div id="todoModal"  class="modal" data-modal="todo">
+				<div class="todo-container">
+					<ul class="list-group">
+						<li class="list-group-item">
+						  <input type="checkbox" class="done">
+						  <span class="todo-text">Dummy item 1</span>
+						  <i class="trash">x</i>
+						</li>
+						</li>
+						<li class="list-group-item">
+						  <input type="checkbox" class="done">
+						  <span class="todo-text">Dummy item 2</span>
+						  <i class="trash">x</i>
+						</li>
+					  </ul>
+					  <!-- ENTER TODO -->
+					  <form id="form">
+						<div class="input-group">
+						  <input type="text" class="form-control" id="todo" placeholder="New Todo">
+						  <div class="input-group-append">
+							<button type="submit" class="todo-btn">Add</button>
+						  </div>
+						</div>
+					  </form>
+				</div>
+			</div>
+			<!-- TODO modal end -->
 		</main>
 
 		<div id="nav">
@@ -137,7 +166,7 @@
 				<img class="weather__icon" src="./assets/logo.png" alt="weathericon" />
 				<p class="weather__text">Weather</p>
 			</div>
-			<div class="todo icon--smallScreen">
+			<div class="icon icon--smallScreen">
 				<img class="todo__icon" src="./assets/logo.png" alt="todoicon" />
 				<p class="todo__text">ToDo</p>
 			</div>
@@ -148,7 +177,7 @@
 				<img class="weather__icon" src="./assets/logo.png" alt="weathericon" />
 				<p class="weather__text">Weather</p>
 			</div>
-			<div class="todo icon--bigScreen">
+			<div class="icon icon--bigScreen" data-icon="todo">
 				<img class="todo__icon" src="./assets/logo.png" alt="todoicon" />
 				<p class="todo__text">ToDo</p>
 			</div>
