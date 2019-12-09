@@ -18,7 +18,7 @@ export function displayTime() {
 		currentMinutes = "0" + currentMinutes;
 	}
 
-	document.getElementsByClassName("time")[0].innerHTML = currentHours + ":" + currentMinutes + meridiem;
+	document.getElementsByClassName("time")[0].innerHTML = currentHours + ":" + currentMinutes;
 
 	let time_obj ={
 		"hour": currentHours,
