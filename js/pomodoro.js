@@ -173,17 +173,17 @@ let pomodoro = {
       this.progressHeight = 0;
     }
   };
-  const modal_pomodoro = document.getElementById("pomodoro-modal");
-  const icon_pomodoro = document.querySelectorAll(".pomodoro");
+  // const modal_pomodoro = document.getElementById("pomodoro-modal");
+  // const icon_pomodoro = document.querySelectorAll(".pomodoro");
   
-  icon_pomodoro.forEach(pdIcon => {
-    pdIcon.addEventListener("click", togglePomodoro);
-  });
+  // icon_pomodoro.forEach(pdIcon => {
+  //   pdIcon.addEventListener("click", togglePomodoro);
+  // });
   
-  function togglePomodoro() {
-    modal_pomodoro.style.visibility =
-      modal_pomodoro.style.visibility === "visible" ? "hidden" : "visible";
-  }
+  // function togglePomodoro() {
+  //   modal_pomodoro.style.visibility =
+  //     modal_pomodoro.style.visibility === "visible" ? "hidden" : "visible";
+  // }
   
   window.onload = function() {
     pomodoro.init();
