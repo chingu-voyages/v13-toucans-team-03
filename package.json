@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/chingu-voyages/v13-toucans-team-03/issues"
   },
-  "homepage": "https://github.com/chingu-voyages/v13-toucans-team-03#readme"
+  "homepage": "https://github.com/chingu-voyages/v13-toucans-team-03#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
