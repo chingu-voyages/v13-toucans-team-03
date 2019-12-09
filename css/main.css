@@ -39,7 +39,7 @@ html {
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--white-color);
-	background: url('../assets/night-waterfall.jpg');
+	/* background: url('../assets/night-waterfall.jpg'); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
