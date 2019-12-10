@@ -77,7 +77,7 @@ li {
 	display: flex;
 	justify-content: space-evenly;
 	z-index: 99;
-	background: black;
+	/* background: black; */
 }
 
 .icon,
@@ -121,6 +121,7 @@ li {
 }
 
 /* Responsive*/
+
 @media only screen and (min-width: 600px) {
 	:root {
 		/* typography */
