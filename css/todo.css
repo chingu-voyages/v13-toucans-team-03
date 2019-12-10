@@ -1,18 +1,19 @@
 /* Blocks */
 #todoModal {
 	background: black;
-	opacity: 0.95;
+	opacity: 0.90;
 }
 
 
 .todo-container {
-    width: 30%;
-    background: rgba(36, 35, 35, 0.90);
+    /* width: 60%; */
+    margin: auto;
+    /* background: rgba(36, 35, 35, 0.90); */
     color: white;
     font-size: 1rem;
     border-radius: 2%;
     font-family: Arial;
-    padding: 0.1rem 1rem 1rem 0rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 
@@ -51,6 +52,13 @@ ul {
 
 
 /* INPUT FIELD */
+/* .form {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */
+
+
 .form-control {
     border: none;
     font-size: 1.1rem;
@@ -62,7 +70,10 @@ ul {
 /* align inout field to list */
 .input-group {
     justify-content: left;
-    padding-left: 45px;
+    padding-left: 5px;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
 }
 
 /* remove input border */
