@@ -165,6 +165,14 @@ li {
 		left:50px;
 	}
 
+	#todoModal{
+		height:17em;
+		width:17em;
+		border-radius: 5px;
+		bottom:55px;
+		right:20px;
+	}
+
 	/*modal content*/
 	.container {
 		width:60%;
