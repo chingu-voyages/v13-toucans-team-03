@@ -24,7 +24,6 @@ else if (hours >= 12 && hours < 17 ) {
 }
 else {
     let randomEvening = Math.floor(Math.random() * evening.length);
-    console.log(randomEvening);
     bg.style.background = "url('./assets/backgrounds/" + evening[randomEvening] + "') no-repeat center center";
     bg.style.backgroundSize = "cover";
     bg.style.height = "100%";
