@@ -1,17 +1,8 @@
 /* Blocks */
-#pomodoro-modal {
-    position: absolute;
-    z-index: 99;
-    width: 360px;
-    height: 500px;
-    visibility: hidden;
-    right: 30px;
-    top: 60px;
-    transform: translate(0, 10px);
+#pomodoro-modal{
     background-color: var(--black-color);
-    padding: 1.5rem;
     color: var(--white-color);
-    border-radius: 5px;
+    transform: translate(0, 10px);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -111,7 +102,6 @@
 }
 
 /* Modifiers */
-
 .btn:active {
     transform: translateY(2px);
 }
