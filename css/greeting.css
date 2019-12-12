@@ -1,0 +1,46 @@
+/* Blocks */
+#greeting {
+    flex:9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: var(--fz-time);
+    display: inline;
+    line-height: 1em;
+}
+
+#greeting span {
+    font-size: var(--fz-greeting_span);
+    display: none;
+}
+
+/* Elements */
+.greeting__text {
+    font-size: var(--fz-greeting_text);
+    width: 100%;
+    line-height: 1em;
+}
+
+#greeting__input {  
+    width:100%;
+    height: 1.5em;
+    line-height: 1em;
+    font-size: var(--fz-greeting_input);
+    border-bottom: solid 1px var(--white-color);
+}
+
+#greeting__input:focus {
+    outline: none;
+}
+
+/* Modifiers */
+.input_custom {
+    background: none;
+    border: none;
+    color: var(--white-color);
+}

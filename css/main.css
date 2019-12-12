@@ -1,0 +1,186 @@
+@import "variables.css";
+@import "greeting.css";
+@import "modal.css";
+@import "team.css";
+@import "weatherModal.css";
+@import "pomodoro.css";
+@import "weather.css";
+@import "todo.css";
+@import "quotes.css";
+
+/****Table of Content****
+- Box-sizing Reset
+- General Styles
+- Blocks
+- Modifiers
+- Responsive
+*************************/
+
+/* Box-sizing Reset */
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+/* General Styles */
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--white-color);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white-color);
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+/* Blocks */
+#bottomNav,
+#topNav {
+	display: none;
+}
+
+#main {
+	flex: 9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#nav {
+	flex: 1;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.icon {
+	cursor: pointer;
+	font-size: var(--fz-icon);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Elements */
+.team__icon,
+.pomodoro__icon,
+.weather__icon,
+.todo__icon {
+	max-width: 4rem;
+	display: block;
+	height: auto;
+}
+
+.team__text,
+.pomodoro__text,
+.weather__text,
+.todo__text {
+	margin: 0.5em;
+}
+
+/* Modifiers */
+.icon--smallScreen {
+	flex-direction: column;
+}
+
+.icon--smallScreen:hover {
+	border-top: 2px solid white;
+}
+
+.icon--bigScreen {
+	flex-direction: row;
+}
+
+/* Responsive*/
+@media only screen and (min-width: 600px) {
+	:root {
+		/* typography */
+		--fz-logo: 0.8rem;
+		--fz-time: 7rem;
+		--fz-greeting_text: 2.5rem;
+		--fz-greeting_span: 2rem;
+		--fz-greeting_input: 1.7rem;
+		--fz-quote: 1.2rem;
+		--fz-icon: 1rem;
+		--fz-teamTitle: 3rem;
+		--fz-teamHeader: 2rem;
+		--fz-teamMute: 1rem;
+		--fz-teamLink: 1.2rem;
+		/*spacing*/
+		--pd-team: 1em 0;
+	}
+
+	#logo,
+	#nav {
+		display: none;
+	}
+
+	#topNav,
+	#bottomNav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1em;
+	}
+
+	#quotes {
+		align-items: flex-end;
+	}
+
+	/*pomodoro modal*/
+	#pomodoro-modal {
+		width: 360px;
+		height: 500px;
+		right: 30px;
+		top: 60px;
+		padding: 1.5rem;
+		border-radius: 5px;
+	}
+
+	/*weather modal*/
+	#weatherModal {
+		height: 30em;
+		width: 30em;
+		border-radius: 5px;
+		bottom: 50px;
+		left: 50px;
+	}
+
+	#todoModal {
+		height: 17em;
+		width: 17em;
+		border-radius: 5px;
+		bottom: 55px;
+		right: 20px;
+	}
+
+	/*modal content*/
+	.container {
+		width: 60%;
+		margin: auto;
+	}
+}
