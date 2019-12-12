@@ -31,7 +31,7 @@ html {
 	-webkit-box-sizing: inherit;
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
-	margin: 0; /* remove default margin*/
+	margin: 0;
 	padding: 0;
 }
 
@@ -39,7 +39,6 @@ html {
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--white-color);
-	/* background: url('../assets/night-waterfall.jpg'); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -76,13 +75,9 @@ li {
 	flex: 1;
 	display: flex;
 	justify-content: space-evenly;
-	z-index: 99;
-	background: black;
 }
 
-.icon,
-.pomodoro,
-.todo {
+.icon {
 	cursor: pointer;
 	font-size: var(--fz-icon);
 	display: flex;
@@ -155,26 +150,37 @@ li {
 	#quotes {
 		align-items: flex-end;
 	}
-	/*weather modal*/
-	#weatherModal{
-		height:30em;
-		width:30em;
+
+	/*pomodoro modal*/
+	#pomodoro-modal {
+		width: 360px;
+		height: 500px;
+		right: 30px;
+		top: 60px;
+		padding: 1.5rem;
 		border-radius: 5px;
-		bottom:50px;
-		left:50px;
 	}
 
-	#todoModal{
-		height:17em;
-		width:17em;
+	/*weather modal*/
+	#weatherModal {
+		height: 30em;
+		width: 30em;
 		border-radius: 5px;
-		bottom:55px;
-		right:20px;
+		bottom: 50px;
+		left: 50px;
+	}
+
+	#todoModal {
+		height: 17em;
+		width: 17em;
+		border-radius: 5px;
+		bottom: 55px;
+		right: 20px;
 	}
 
 	/*modal content*/
 	.container {
-		width:60%;
-		margin:auto;
+		width: 60%;
+		margin: auto;
 	}
 }
