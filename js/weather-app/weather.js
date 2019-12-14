@@ -1,6 +1,6 @@
 //Get openweathermap api key from file api keys
 
-import { config } from './config.js';
+const { API_KEY } = process.env
 
 
 function getLocation(){
