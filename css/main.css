@@ -39,8 +39,6 @@ html {
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--white-color);
-	background-repeat: no-repeat;
-	background-size: cover;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -152,7 +150,7 @@ li {
 	}
 
 	/*pomodoro modal*/
-	#pomodoro-modal {
+	#pomodoroModal {
 		width: 360px;
 		height: 500px;
 		right: 30px;

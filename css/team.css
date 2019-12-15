@@ -17,8 +17,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  align-items: flex-start;
-  width:100%;
+	align-items: flex-start;
+	width:100%;
 }
 
 .teamInfo__team,

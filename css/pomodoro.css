@@ -1,6 +1,6 @@
 /* Blocks */
-#pomodoro-modal{
-    background-color: var(--black-color);
+#pomodoroModal{
+    background-color: black;
     color: var(--white-color);
     transform: translate(0, 10px);
     display: flex;
@@ -13,7 +13,7 @@
     margin-top: 25px; 
 }
 
-#pomodoro-modal::before {
+#pomodoroModal::before {
     position: absolute;
     z-index: -1;
     content: "";
@@ -28,7 +28,6 @@
 
 #startTimer {
     display: flex;
-    font-size: 4rem;
     margin: auto;
     border: 5px solid var(--gold-color);
     border-radius: 50%;
@@ -42,19 +41,20 @@
 
 #start {
     z-index: 1;
+    width: 50px;
     position: relative;
     color: var(--white-color);
     margin-right: -12px;
 }
 
 #stop {
-    font-size: 2rem;
-    margin-right: 25px;
+    width: 40px;
+    margin-right: 40px;
 }
 
 #reset {
-    margin-left: 25px;
-    font-size: 1.5rem;
+    width: 33px;
+    margin-left: 40px;
 }
 
 #options {
@@ -137,3 +137,73 @@
 .longBreak_btn:active {
     background-color: #191349;
 }
+
+
+            /* landscape media queries */
+
+/* Target landscape view */
+@media screen and (max-width: 813px) and (orientation: landscape) {
+    #pomodoroModal {
+        width: 100% !important;
+        height: 100% !important;
+        top: -10px !important;
+        right: 0 !important;
+    }
+
+    #pomodoroModal::before {
+        visibility: none;
+    }
+
+    #pdButtons,
+    #options {
+        margin-top: 25px !important;
+    }
+
+    #time {
+        margin-top: 15px;
+    }
+
+    #startTimer {
+        width: 125px;
+        height: 125px;
+    }
+
+    #progress {
+        width: 125px;
+    }
+
+}
+
+/* small screen views */
+@media screen and (max-width: 375px) {
+    #time {
+        font-size: 5rem;
+    }
+
+    #work,
+    #shortBreak,
+    #longBreak {
+        width: 80px;
+        font-size: 0.8rem;
+    }
+
+    #startTimer {
+        width: 125px;
+        height: 125px;
+    }
+
+    #progress {
+        width: 125px;
+    }
+
+    #stop {
+        width: 35px;
+        margin-right: 30px;
+    }
+
+    #reset {
+        width: 27px;
+        margin-left: 30px;
+    }
+}
+
