@@ -26,7 +26,15 @@
 			<div id="greeting">
 				<div class="time"></div>
 				<p class="greeting__text"></p>
-				<input class="input_custom" id="greeting__input" type="text" placeholder="type in your name, then press enter" />
+				<input class="input_custom" id="greeting__input" type="text" placeholder="Type in your name, then press enter" />
+				<div id="mit">
+					<p class="mit_text">What are your three most important tasks today?</p>
+					<ul class="mit_list"></ul>
+					<form class="mit_form">
+							<input type="text" name="item" placeholder="Enter your task" required />
+							<input type="submit" value="➕" />
+					</form>
+				</div>
 			</div>
 			<div id="quotes">
 				<p class="quotes__text"></p>
@@ -225,6 +233,7 @@
 		<!-- JavaScript -->
 		<script type="module" src="js/weather-app/weather.js"></script>
 		<script type="module" src="js/greeting/greetings.js"></script>
+		<script src="js/mit.js"></script>
 		<script type="module" src="js/time.js"></script>
 		<script src="js/quote.js"></script>
 		<script src="js/modal.js"></script>
