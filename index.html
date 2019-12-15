@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://kit.fontawesome.com/a12c8b3b94.js" crossorigin="anonymous"></script>
+		<!-- <script src="https://kit.fontawesome.com/a12c8b3b94.js" crossorigin="anonymous"></script> -->
 		<title>Momentum-like App</title>
 	</head>
 	
@@ -94,7 +94,7 @@
 			<!-- team modal end -->
 
 			<!-- Pomodoro Modal -->
-			<div id="pomodoro-modal" class="modal"  data-modal="pomodoro">
+			<div id="pomodoroModal" class="modal"  data-modal="pomodoro">
 				<div id="time">
 					<span id="timer__minutes">00</span>
 					<span id="timer__colon">:</span>
@@ -106,12 +106,12 @@
 					<span id="longBreak" class="longBreak_btn timer_btn btn">Long Break</span>
 				</div>
 				<div id="pdButtons">
-					<span href="#" id="stop" class="btn"><i class="far fa-stop-circle"></i></span>
+					<img style="color: white;" id="stop" class="btn" src="assets/pomodoro-icons/stop-circle-regular.svg" alt="stop">
 					<div id="startTimer" class="timer_btn btn">
-						<span href="#" id="start"><i class="fas fa-play"></i></span>
+						<img id="start" src="assets/pomodoro-icons/play-solid.svg" alt="play">
 						<div id="progress"></div>
 					</div>
-					<span href="#" id="reset" class="btn"><i class="fas fa-undo"></i></span>
+					<img id="reset" class="btn" src="assets/pomodoro-icons/undo-solid.svg" alt="undo">
 				</div>
 			</div>
 		<!-- End Pomodoro modal -->
