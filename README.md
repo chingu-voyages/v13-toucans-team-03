@@ -7,7 +7,9 @@
 ## Table of Contents
 - [Wireframes](https://github.com/chingu-voyages/v13-toucans-team-03/blob/development/wireframe.md)
 - [User Stories](#user-stories)
+- [Bonus User Stories](#bonus-user-stories)
 - [Technologies](#technologies)
+- [Credits](#credits)
 - [Authors](#authors)
 
 ## User Stories for MVP 
