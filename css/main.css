@@ -7,6 +7,7 @@
 @import "weather.css";
 @import "todo.css";
 @import "quotes.css";
+@import "dynamicBg.css";
 
 /****Table of Content****
 - Box-sizing Reset
@@ -34,6 +35,18 @@ html {
 	margin: 0;
 	padding: 0;
 }
+
+
+/* preload */
+
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
+
 
 /* General Styles */
 body {
