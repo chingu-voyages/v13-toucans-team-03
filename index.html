@@ -10,7 +10,7 @@
 		<title>Momentum-like App</title>
 	</head>
 	
-	<body>
+	<body class="preload">
 		<div id="topNav">
 			<div class="icon icon--bigScreen" data-icon="team">
 				<img class="team__icon" src="./assets/logo.png" alt="team icon" />
@@ -195,5 +195,10 @@
 		<script src="js/pomodoro.js"></script>
 		<script src="js/todo.js"></script>
 		<script type="module" src="js/dynamicBackground/dynamic-bg.js"></script>
+		<script>
+			$(window).load(function() {
+				$("body").removeClass("preload");
+			});
+		</script>
 	</body>
 </html>
