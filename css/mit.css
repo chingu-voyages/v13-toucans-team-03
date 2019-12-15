@@ -1,0 +1,49 @@
+#mit{
+  display:none;
+}
+
+.mit_text{
+  margin-top: 15px;
+  font-size:1rem;
+}
+
+.mit_list {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	list-style: none;
+}
+
+.mit_list li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 10px 0;
+	display: flex;
+}
+
+.mit_list label {
+	flex: 1;
+	cursor: pointer;
+}
+
+.mit_list input {
+	display: none;
+}
+
+.mit_list input + label:before {
+	content: "⬜️";
+	margin-right: 10px;
+}
+
+.mit_list input:checked + label:before {
+	content: "🚀";
+}
+
+.mit_form {
+	margin-top: 10px;
+}
+
+.mit_form input {
+	padding: 10px;
+	outline: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
