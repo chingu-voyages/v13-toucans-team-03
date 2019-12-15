@@ -1,1 +1,28 @@
 /* Blocks */
+
+#sevenDaysWeather {
+    display: flex;
+    flex-flow: row;
+}
+
+.day {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    width: 80px;
+}
+
+.dayTitle {
+    margin-bottom: 10px;
+}
+
+.temp {
+    color: var(--gold-color);
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.temp-muted {
+    color:var(--light-purple-color);
+}
