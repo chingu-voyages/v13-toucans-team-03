@@ -6,11 +6,11 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://kit.fontawesome.com/a12c8b3b94.js" crossorigin="anonymous"></script>
+		<!-- <script src="https://kit.fontawesome.com/a12c8b3b94.js" crossorigin="anonymous"></script> -->
 		<title>Momentum-like App</title>
 	</head>
 	
-	<body>
+	<body class="preload">
 		<div id="topNav">
 			<div class="icon icon--bigScreen" data-icon="team">
 				<img class="team__icon" src="./assets/logo.png" alt="team icon" />
@@ -94,7 +94,7 @@
 			<!-- team modal end -->
 
 			<!-- Pomodoro Modal -->
-			<div id="pomodoro-modal" class="modal"  data-modal="pomodoro">
+			<div id="pomodoroModal" class="modal"  data-modal="pomodoro">
 				<div id="time">
 					<span id="timer__minutes">00</span>
 					<span id="timer__colon">:</span>
@@ -106,12 +106,12 @@
 					<span id="longBreak" class="longBreak_btn timer_btn btn">Long Break</span>
 				</div>
 				<div id="pdButtons">
-					<span href="#" id="stop" class="btn"><i class="far fa-stop-circle"></i></span>
+					<img style="color: white;" id="stop" class="btn" src="assets/pomodoro-icons/stop-circle-regular.svg" alt="stop">
 					<div id="startTimer" class="timer_btn btn">
-						<span href="#" id="start"><i class="fas fa-play"></i></span>
+						<img id="start" src="assets/pomodoro-icons/play-solid.svg" alt="play">
 						<div id="progress"></div>
 					</div>
-					<span href="#" id="reset" class="btn"><i class="fas fa-undo"></i></span>
+					<img id="reset" class="btn" src="assets/pomodoro-icons/undo-solid.svg" alt="undo">
 				</div>
 			</div>
 		<!-- End Pomodoro modal -->
@@ -119,7 +119,43 @@
 			<!-- weather example modal start -->
 			<div id="weatherModal"  class="modal" data-modal="weather">
 				<div class="container">
-					Place your code here
+					<div id="sevenDaysWeather">
+						<div class="day">
+							<p class="dayTitle">Sunday</p>
+							<img src="assets/weather-icons/sun-solid.svg" alt="sunny" width="40">
+							<p class="temp">64<span>&#8457;</span><span class="temp-muted"> 47<span>&#8457;</span></span></p>
+						</div>
+						<div class="day">
+							<p class="dayTitle">Monday</p>
+							<img src="assets/weather-icons/sun-solid.svg" alt="sunny" width="40">
+							<p class="temp">69<span>&#8457;</span><span class="temp-muted"> 46<span>&#8457;</span></span></p>
+						</div>
+						<div class="day">
+							<p class="dayTitle">Tuesday</p>
+							<img src="assets/weather-icons/cloud-sun-solid.svg" alt="cloudy" width="50">
+							<p class="temp">66<span>&#8457;</span><span class="temp-muted"> 45<span>&#8457;</span></span></p>
+						</div>
+						<div class="day">
+							<p class="dayTitle">Wednesday</p>
+							<img src="assets/weather-icons/cloud-sun-solid.svg" alt="cloudy" width="50">
+							<p class="temp">66<span>&#8457;</span><span class="temp-muted"> 49<span>&#8457;</span></span></p>
+						</div>
+						<div class="day">
+							<p class="dayTitle">Thursday</p>
+							<img src="assets/weather-icons/cloud-sun-solid.svg" alt="cloudy" width="50">
+							<p class="temp">71<span>&#8457;</span><span class="temp-muted"> 51<span>&#8457;</span></span></p>
+						</div>
+						<div class="day">
+							<p class="dayTitle">Friday</p>
+							<img src="assets/weather-icons/cloud-sun-solid.svg" alt="cloudy" width="50">
+							<p class="temp">69<span>&#8457;</span><span class="temp-muted"> 51<span>&#8457;</span></span></p>
+						</div>
+						<div class="day">
+							<p class="dayTitle">Saturday</p>
+							<img src="assets/weather-icons/cloud-sun-solid.svg" alt="cloudy" width="50">
+							<p class="temp">64<span>&#8457;</span><span class="temp-muted"> 52<span>&#8457;</span></span></p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- weather example modal end -->
@@ -195,5 +231,10 @@
 		<script src="js/pomodoro.js"></script>
 		<script src="js/todo.js"></script>
 		<script type="module" src="js/dynamicBackground/dynamic-bg.js"></script>
+		<script>
+			$(window).load(function() {
+				$("body").removeClass("preload");
+			});
+		</script>
 	</body>
 </html>

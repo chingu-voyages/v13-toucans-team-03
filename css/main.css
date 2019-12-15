@@ -7,6 +7,7 @@
 @import "weather.css";
 @import "todo.css";
 @import "quotes.css";
+@import "dynamicBg.css";
 
 /****Table of Content****
 - Box-sizing Reset
@@ -21,7 +22,7 @@ html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 }
 
@@ -35,12 +36,22 @@ html {
 	padding: 0;
 }
 
+
+/* preload */
+
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
+
+
 /* General Styles */
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--white-color);
-	background-repeat: no-repeat;
-	background-size: cover;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -69,6 +80,7 @@ li {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 }
 
 #nav {
@@ -139,6 +151,7 @@ li {
 		display: none;
 	}
 
+
 	#topNav,
 	#bottomNav {
 		display: flex;
@@ -152,7 +165,7 @@ li {
 	}
 
 	/*pomodoro modal*/
-	#pomodoro-modal {
+	#pomodoroModal {
 		width: 360px;
 		height: 500px;
 		right: 30px;
@@ -163,10 +176,10 @@ li {
 
 	/*weather modal*/
 	#weatherModal {
-		height: 30em;
-		width: 30em;
+		height: 10em;
+		width: 45em;
 		border-radius: 5px;
-		bottom: 50px;
+		bottom: 60px;
 		left: 50px;
 	}
 

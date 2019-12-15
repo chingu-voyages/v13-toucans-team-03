@@ -20,7 +20,6 @@ export const afternoon = [
 ];
 
 export const evening = [
-    `astronomy-beautiful-clouds.jpg`,
     `agriculture-clouds-corn.jpg`,
     `bird-s-eye-view-of-city-during-dawn.jpg`,
     `body-of-water-across-bridge-during-nighttime.jpg`,
