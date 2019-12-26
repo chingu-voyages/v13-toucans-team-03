@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "MoTo",
+    "description": "A clone of Momentum, with three new productivity features.",
+    "version": "1.0.0",
+    "icons": {"128": "icon.png"},
+    // this chrome url overrides
+    "chrome_url_overrides": {
+        "newtab":"index.html"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "index.html"
+    },
+    "permissions": [ "tabs"],
+    "background": {
+        "persistent": false,
+        "scripts": ["js/background.js",
+            "js/modal.js", 
+            "js/pomodoro.js",
+            "js/quote.js",
+            "js/time.js",
+            "js/todo.js",
+            "js/weather-app/weather.js",
+            "js/weather-app/config.js.secret",
+            "js/greeting/greetings.js",
+            "js/greeting/greetTypes.json",
+            "js/dynamicBackground/bgList.js",
+            "js/dynamicBackground/dynamic-bg.js",
+            "js/mit.js"]
+      } 
+}
