@@ -4,7 +4,6 @@
     "description": "A clone of Momentum, with three new productivity features.",
     "version": "1.0.0",
     "icons": {"128": "icon.png"},
-    // this chrome url overrides
     "chrome_url_overrides": {
         "newtab":"index.html"
     },
